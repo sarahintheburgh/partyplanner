@@ -1,0 +1,99 @@
+/***************************************************************
+ ****  Written by Sarah Reiser                              ****
+ ****  This is the stylesheet for my fake party planner app ****
+ **************************************************************/
+/*  default styling for entire page  */
+body {
+  font-family: "Segoe Print","Segoe Script",cursive;
+  font-size: 2em;
+  color: green;
+  background-color: purple;
+}
+/* default stylings for headings */
+h1, h2, h3{
+  text-align:center;
+}
+h2   {
+  color: magenta;
+  font-family:"Papyrus", fantasy;
+  font-size: 2em;
+}
+h3   {
+  color: white;
+  font-family:"Papyrus", fantasy;
+  font-size: 2em;
+}
+
+/*special stylings for the heading at the top of the page.  It stays
+  even when the page scrolls.  */
+
+div#header {
+  width:100%;
+  position: fixed;
+  top:  0;
+  left: 0;
+  margin-bottom: 0;
+  background-color:  purple;
+}
+div#header h2, div#invisible-header h2{
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 900;
+  color: green;
+/*  line-height: 2em;
+  font-size: 2em;
+*/}
+div#header img, div#invisible-header img{
+  float:left;
+  margin:.5em .75em 0 .1em;
+  }
+div#invisible-header{
+    width: 100%;
+    margin-bottom: 0;
+    visibility: hidden;
+  }
+p.clearFloat{
+  clear: both;
+  }
+/*end of stylings for header at top of page */
+
+
+/* general paragrah styling and classas */
+p    {
+  font-size: 1.2em;
+}
+p.important {
+  font-size:1.5em;
+  font-weight: 900;
+}
+p.closeLines {
+  line-height: 1.2em;
+  letter-spacing: -.05em;
+}
+/* class to wrap text around the right side of an image */
+img.wrap-around-the-right-side{
+  float: left;
+}
+/* class to center an image */
+img.in-the-center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* class for text on the "under construction" page, which has some text a
+ different color and font than the rest of the site. */
+.construction{
+  font-family: sans-serif;
+  font-size: 2em;
+  color: lightblue;
+  text-align: center;
+}
+/* Class for fun styled text.*/
+.funtext{
+  font-family: "Lucida Handwriting", "Apple Chancery", cursive;
+  font-weight: bolder;
+  font-size:3em;
+}
+/* Class to empasize text */
+.emphasized {
+  font-style: italic;
+}
