@@ -56,8 +56,41 @@ p.clearFloat{
   }
 /*end of stylings for header at top of page */
 
-
-/* general paragrah styling and classas */
+/* navigation bar stylings and placement of navigation bar to the left */
+div#main{
+  width: 100%;
+}
+div#navbar{
+  display: inline-block;
+  width: 30%;
+  float: left;
+}
+div#navbar ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+div#navbar ul li{
+  background-color: darkblue;
+  margin: 0 0 .25em 0;
+}
+div#navbar ul li a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:   1.1em;
+  font-weight: 800;
+  color: lightblue;
+  text-decoration: none;
+  display: block;
+  padding: .35em;
+}
+/*end of navigation bar stylings */
+div#content {
+  width: 67%;
+  float: right;
+}
+.nowrap {
+  clear:both;
+}
+/* general paragrah styling and classes */
 p    {
   font-size: 1.2em;
 }
