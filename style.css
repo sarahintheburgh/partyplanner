@@ -39,15 +39,18 @@ div#header h2, div#invisible-header h2{
   font-family: Verdana, Geneva, sans-serif;
   font-weight: 900;
   color: green;
-/*  line-height: 2em;
-  font-size: 2em;
-*/}
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
 div#header img, div#invisible-header img{
   float:left;
-  margin:.5em .75em 0 .1em;
+  margin:.5em .25em 0 .1em;
+  line-height: .8em;
   }
 div#invisible-header{
     width: 100%;
+    top:  0;
+    left: 0;
     margin-bottom: 0;
     visibility: hidden;
   }
@@ -57,12 +60,8 @@ p.clearFloat{
 /*end of stylings for header at top of page */
 
 /* navigation bar stylings and placement of navigation bar to the left */
-div#main{
-  width: 100%;
-}
 div#navbar{
   display: inline-block;
-  width: 30%;
   float: left;
 }
 div#navbar ul{
@@ -71,24 +70,52 @@ div#navbar ul{
 }
 div#navbar ul li{
   background-color: darkblue;
-  margin: 0 0 .25em 0;
+  margin: 0 0 .2em 0;
 }
 div#navbar ul li a{
   font-family: Arial, Helvetica, sans-serif;
-  font-size:   1.1em;
-  font-weight: 800;
+  font-size:   .75em;
+  font-weight: 700;
   color: lightblue;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   padding: .35em;
 }
 /*end of navigation bar stylings */
+div#main{
+  width: 80%;
+  margin-left: 20%
+}
+div#content2{
+  width:100%
+}
+div#sidebar {
+  width: 30%;
+  float: left;
+}
 div#content {
   width: 67%;
   float: right;
 }
 .nowrap {
   clear:both;
+}
+/* table styling */
+table{
+  border-collapse: collapse;
+}
+.wider{
+  width: 40%;
+}
+.narrow{
+  width: 15%;
+}
+.normal{
+  width: 25%;
+}
+
+th,td {
+  border:1px solid black;
 }
 /* general paragrah styling and classes */
 p    {
