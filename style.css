@@ -81,6 +81,10 @@ div#navbar ul li a{
   display: inline-block;
   padding: .35em;
 }
+div#navbar ul.choicelist li {
+  background-color: blue;
+  cursor:pointer
+}
 /*end of navigation bar stylings */
 div#main{
   width: 80%;
@@ -117,6 +121,13 @@ table{
 th,td {
   border:1px solid black;
 }
+/* styling for buttons in the table, with hidden images*/
+.unseen{
+  visibility: collapse;
+}
+.seen{
+  visibility: visible;
+}
 /* general paragrah styling and classes */
 p    {
   font-size: 1.2em;
@@ -129,6 +140,11 @@ p.closeLines {
   line-height: 1.2em;
   letter-spacing: -.05em;
 }
+.indexpagetext{
+  color: black;
+  font-size: 1em;
+}
+
 /* class to wrap text around the right side of an image */
 img.wrap-around-the-right-side{
   float: left;

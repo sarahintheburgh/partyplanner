@@ -1,5 +1,7 @@
-<html>
-<!--  This html is for an under construction page for
+<DOCTYPE html>
+  <html lang="en">
+
+<!--  This html is for a form page for
     my fake web page for Point Park Party Planners. -->
 <head>
   <title>Point Park Party Planners</title>
@@ -12,21 +14,21 @@
     <img
        src="logopppp.png" alt="Point Park Party Planners"
        width="200" height="100">
-     <h1>Packages</h1>
+     <h1>PRICING</h1>
   </div>
   <div id="header">
     <img
        src="logopppp.png" alt="Point Park Party Planners"
        width="200" height="100">
-     <h2>QUOTES</h2>
+     <h2>PRICING</h2>
   </div>
   <p> </p>
   <!-- beginning of navigation bar  -->
   <div id="navbar">
-    <ul>
+    <ul class="choicelist">
       <li><a href="index.html">HOME</a></li>
       <li><a href="packages.html">PACKAGES</a></li>
-      <li><a href="quote_form.html">GET A QUOTE</a></li>
+      <li><a href="quote_form.html">PRICING</a></li>
       <li><a href="construction.html">CONTACT US</a></li>
       <li><a href="about.html">ABOUT US</a></li>
     </ul>
@@ -35,11 +37,64 @@
 
   <!-- Beginning of main section of page -->
   <div id="main">
-    <p class = "construction">
-    Under Construction <br>
-    Check back again soon! </p>
-    <img class="in-the-center" src="dogpic2.jpg" alt="Sorry!" width="200" height="400">
-  <div class="no-wrap"></div>
+    <form>
+      <fieldset>  <!-- Getting contact Info -->
+        <legend>Contact info</legend>
+        <label>Last Name:
+        <input type = "text" name="surname" size="25" maxlenth="40"></label>
+        <label>First Name:
+        <input type="text" name="firstname" size="25" maxlength="30"></label>
+        <label>Main Phone Number:
+          <input type="tel" id="mainphone" name="mainphone"
+                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                 required> <small>Format: 123-456-7890</small></label>
+      </fieldset>
+
+      <!-- This fieldset collects information about the type of party -->
+      <fieldset>
+        <legend>Party Package Selection</legend>
+        Party Type:
+        <input type="radio" name="party-type" value="Birthday"
+        checked="checked">Birthday
+        <input type="radio" name="party-type" value="Holiday"
+        checked="checked">Holiday
+        <input type="radio" name="party-type" value="Event"
+        checked="checked">Special Event
+        <br>
+        Age Group:
+        <input type="radio" name="party-age" value="Children"
+        checked="checked">Children
+        <input type="radio" name="party-age" value="Teens"
+        checked="checked">Teens
+        <input type="radio" name="party-age" value="Adults"
+        checked="checked">Adults
+        <br>
+        Level:
+        <input type="radio" name="party-level" value="Standard"
+        checked="checked">Standard
+        <input type="radio" name="party-level" value="Bouncy"
+        checked="checked">Bouncy
+        <input type="radio" name="party-level" value="Deluxe"
+        checked="checked">Deluxe
+        <input type="radio" name="party-level" value="Luxury"
+        checked="checked">Luxury
+      </fieldset>
+
+<!-- This collects information about the extra cost options chosen -->
+      <fieldset>
+        <legend>Party Extra Options Selection</legend>
+      </fieldset>
+<!-- This is the button to submit the form after everything is entered -->
+<!--        <input type="submit" value="request quote">
+-->
+    </form>
+  <!--  simple html-select form tag with abilities to redirect the client to the destination chossen through a option in this select form tag.
+-->
+      <div class="no-wrap"></div>
   </div> <!-- end of main -->
+  <script src=
+  "jquery-3.4.1.js">
+  </script>
+   <script src="jquery_scripts.js"></script>
 </body>
 </html>
