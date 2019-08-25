@@ -38,7 +38,7 @@ div#header {
 div#header h2, div#invisible-header h2{
   font-family: Verdana, Geneva, sans-serif;
   font-weight: 900;
-  color: green;
+  color: lightgreen;
   line-height: 1.5em;
   font-size: 1.5em;
 }
@@ -107,6 +107,7 @@ div#content {
 /* table styling */
 table{
   border-collapse: collapse;
+  color: black;
 }
 .wider{
   width: 40%;
@@ -168,6 +169,19 @@ img.in-the-center{
   font-family: "Lucida Handwriting", "Apple Chancery", cursive;
   font-weight: bolder;
   font-size:3em;
+}
+/* Classes for special background colors. */
+.LtBlueBackground{
+  background-color: lightblue;
+}
+.PinkBackground{
+  background-color: pink;
+}
+/*Legend styling */
+legend{
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.5em;
+  color: white;
 }
 /* Class to empasize text */
 .emphasized {

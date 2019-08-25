@@ -2,13 +2,16 @@
   <html lang="en">
 
 <!--  This html is for a form page for
-    my fake web page for Point Park Party Planners. -->
+    my fake web page for Point Park Party Planners.
+    This page is supposed to collect the options desired and spit out a
+    ballpark figure for the cost of the party.  This is my 4th screen.
+    I wanted to get this one working well too because I was having fun.-->
 <head>
   <title>Point Park Party Planners</title>
   <link rel="stylesheet" type="text/css"
   href="style.css">
 </head>
-<body>
+<body background=DreamNight.jpg>
 <!-- Beginning of header  -->
   <div id="invisible-header">
     <img
@@ -38,7 +41,7 @@
   <!-- Beginning of main section of page -->
   <div id="main">
     <form>
-      <fieldset>  <!-- Getting contact Info -->
+      <fieldset class="PinkBackground">
         <legend>Contact info</legend>
         <label>Last Name:
         <input type = "text" name="surname" size="25" maxlenth="40"></label>
@@ -51,42 +54,130 @@
       </fieldset>
 
       <!-- This fieldset collects information about the type of party -->
-      <fieldset>
+      <fieldset class="LtBlueBackground">
         <legend>Party Package Selection</legend>
         Party Type:
-        <input type="radio" name="party-type" value="Birthday"
-        checked="checked">Birthday
-        <input type="radio" name="party-type" value="Holiday"
-        checked="checked">Holiday
-        <input type="radio" name="party-type" value="Event"
-        checked="checked">Special Event
+        <label><input type="radio" name="party-type" value="Birthday"
+        checked="checked">Birthday</label>
+        <label><input type="radio" name="party-type" value="Holiday"
+        checked="checked">Holiday</label>
+        <label><input type="radio" name="party-type" value="Event"
+        checked="checked">Special Event</label>
         <br>
         Age Group:
-        <input type="radio" name="party-age" value="Children"
-        checked="checked">Children
-        <input type="radio" name="party-age" value="Teens"
-        checked="checked">Teens
-        <input type="radio" name="party-age" value="Adults"
-        checked="checked">Adults
+        <label><input type="radio" name="party-age" value="Children"
+        checked="checked">Children</label>
+        <label><input type="radio" name="party-age" value="Teens"
+        checked="checked">Teens</label>
+        <label><input type="radio" name="party-age" value="Adults"
+        checked="checked">Adults</label>
         <br>
         Level:
-        <input type="radio" name="party-level" value="Standard"
-        checked="checked">Standard
-        <input type="radio" name="party-level" value="Bouncy"
-        checked="checked">Bouncy
-        <input type="radio" name="party-level" value="Deluxe"
-        checked="checked">Deluxe
-        <input type="radio" name="party-level" value="Luxury"
-        checked="checked">Luxury
+        <label><input type="radio" name="party-level" value="Standard"
+        checked="checked">Standard</label>
+        <label><input type="radio" name="party-level" value="Bouncy"
+        checked="checked">Bouncy</label>
+        <label><input type="radio" name="party-level" value="Deluxe"
+        checked="checked">Deluxe</label>
+        <label><input type="radio" name="party-level" value="Luxury"
+        checked="checked">Luxury</label>
       </fieldset>
 
 <!-- This collects information about the extra cost options chosen -->
-      <fieldset>
-        <legend>Party Extra Options Selection</legend>
+      <fieldset class="PinkBackground">
+        <legend>Food Options</legend>
+          Standard:<br>
+          <label><input type="checkbox" name="foodOptions" >Chips & Dip</label>
+          <label><input type="checkbox" name="foodOptions" >Tortilla Chips & Salsa</label>
+          <label><input type="checkbox" name="foodOptions" >Vegetable Tray</label>
+          <label><input type="checkbox" name="foodOptions" >Fruit Tray</label>
+          <label><input type="checkbox" name="foodOptions" >Cake & Ice Cream</label>
+          <br>
+          Deluxe:<br>
+          <label><input type="checkbox" name="foodOptions" >Cheese Tray</label>
+          <label><input type="checkbox" name="foodOptions" >Pizza</label>
+          <label><input type="checkbox" name="foodOptions" >Wings</label>
+          <label><input type="checkbox" name="foodOptions" >Spanikopita</label>
+          <label><input type="checkbox" name="foodOptions" >Quiche</label>
+          <br>
+          Luxury:<br>
+          <label><input type="checkbox" name="foodOptions" >Caviar Tray</label>
+          <label><input type="checkbox" name="foodOptions" >Sushi Tray</label>
+          <label><input type="checkbox" name="foodOptions" >Roast Beef Station</label>
+          <label><input type="checkbox" name="foodOptions" >Baked Potato Bar</label>
+          <label><input type="checkbox" name="foodOptions" >Omlette Bar</label>
       </fieldset>
+<!-- This fieldset is for other options  -->
+      <fieldset class="LtBlueBackground">
+        <legend>Theme Options For Party</legend>
+         Holidays:<br>
+         <label><input type="radio" name="partyTheme" value="July4th"
+         checked="checked">4th of July</label>
+         <label><input type="radio" name="partyTheme" value="NewYears"
+         checked="checked">New Year's Eve</label>
+         <label><input type="radio" name="partyTheme" value="Valentine"
+         checked="checked">Valentines Day</label>
+         <label><input type="radio" name="partyTheme" value="StPatricksDay"
+         checked="checked">St Patricks Day</label>
+         <label><input type="radio" name="partyTheme" value="Easter"
+         checked="checked">Easter</label>
+         <label><input type="radio" name="partyTheme" value="MemorialDay"
+         checked="checked">Memorial Day</label>
+         <label><input type="radio" name="partyTheme" value="LaborDay"
+         checked="checked">Labor Day</label>
+         <label><input type="radio" name="partyTheme" value="Halloween"
+         checked="checked">Halloween</label>
+         <label><input type="radio" name="partyTheme" value="Thanksgiving"
+         checked="checked">Thanksgiving</label>
+         <label><input type="radio" name="partyTheme" value="Christmas"
+         checked="checked">Christmas</label>
+         <label><input type="radio" name="partyTheme" value="DayoftheDead"
+         checked="checked">Day of the Dead</label>
+         <label><input type="radio" name="partyTheme" value="Passover"
+         checked="checked">Passover</label>
+         <br>
+         Other:<br>
+         <label><input type="radio" name="partyTheme" value="Dinosaurs"
+         checked="checked">Dinosaurs</label>
+         <label><input type="radio" name="partyTheme" value="Clowns"
+         checked="checked">Clowns</label>
+         <label><input type="radio" name="partyTheme" value="Princesses"
+         checked="checked">Princesses</label>
+         <label><input type="radio" name="partyTheme" value="Medieval"
+         checked="checked">Medieval</label>
+         <label><input type="radio" name="partyTheme" value="Knights"
+         checked="checked">Knights</label>
+         <label><input type="radio" name="partyTheme" value="Disney"
+         checked="checked">Disney</label>
+         <label><input type="radio" name="partyTheme" value="LaserStorm"
+         checked="checked">Laser Storm</label>
+         <label><input type="radio" name="partyTheme" value="MountainClimbing"
+         checked="checked">Mountain Climbing</label>
+         <label><input type="radio" name="partyTheme" value="Bowling"
+         checked="checked">Bowling</label>
+         <label><input type="radio" name="partyTheme" value="Other"
+         checked="checked">Other</label>
+
+      </fieldset>
+      <fieldset class="PinkBackground">
+        <legend>Other Options</legend>
+          <label><input type="checkbox" name="extraOptions" >Bouncy House</label>
+          <label><input type="checkbox" name="extraOptions" >Clown</label>
+          <label><input type="checkbox" name="extraOptions" >Magician</label>
+          <label><input type="checkbox" name="extraOptions" >Balloon Animals</label>
+          <label><input type="checkbox" name="extraOptions" >Outside Venue</label>
+          <label><input type="checkbox" name="extraOptions" >D. J. (Music)</label>
+          <label><input type="checkbox" name="extraOptions" >Live Band (under 1000)</label>
+          <label><input type="checkbox" name="extraOptions" >Live Band (1000+)</label>
+          <label><input type="checkbox" name="extraOptions" >Party Tent</label>
+          <label><input type="checkbox" name="extraOptions" >Park Pavillian</label>
+          <label><input type="checkbox" name="extraOptions" >Waterslide</label>
+      </fieldset>
+
 <!-- This is the button to submit the form after everything is entered -->
 <!--        <input type="submit" value="request quote">
 -->
+<!-- This is where I would put the variable to show how much the party would cost -->
     </form>
   <!--  simple html-select form tag with abilities to redirect the client to the destination chossen through a option in this select form tag.
 -->
